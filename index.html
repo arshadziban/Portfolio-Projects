@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <div class="container mx-auto p-5">
+    <!-- Main Layout -->
+    <div class="flex gap-5">
+      <aside class="bg-gradient-to-br from-blue-50 to-white shadow-lg rounded-xl p-8 w-full md:w-1/3 border border-blue-100 h-screen sticky top-0 overflow-y-auto">
+        <img src="assets/profile.jpg" alt="Profile" class="w-40 h-40 mx-auto rounded-full border-4 border-blue-500 mb-6 shadow-md hover:scale-105 transition-transform duration-300">
+        <h1 class="text-3xl font-bold text-center mb-2 text-gray-800">Your Name</h1>
+        <p class="text-center text-blue-600 font-medium mb-6">Data Analyst</p>
+      
+        <!-- Social Links -->
+        <div class="flex justify-center space-x-6 mb-6">
+          <a href="#" class="text-blue-600 text-2xl hover:text-blue-800 transition-colors duration-300"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="text-blue-500 text-2xl hover:text-blue-600 transition-colors duration-300"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-black-800 text-2xl hover:text-black-800 transition-colors duration-300"><i class="fab fa-github"></i></a>
+        </div>
+      
+        <!-- Contact Info -->
+        <div class="text-sm space-y-3 mb-6">
+          <p class="flex items-center"><i class="fas fa-phone-alt text-blue-500 mr-2"></i> +880123456789</p>
+          <p class="flex items-center"><i class="fas fa-envelope text-blue-500 mr-2"></i> youremail@gmail.com</p>
+          <p class="flex items-center"><i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>Your Location</p>
+        </div>
+      
+        <!-- Resume Button -->
+        <div class="mt-6 text-center">
+          <a href="#" class="bg-blue-500 text-white py-3 px-6 rounded-full shadow-md hover:bg-blue-600 transition-colors duration-300 inline-flex items-center">
+            <i class="fas fa-download mr-2"></i> Download Resume
+          </a>
+        </div>
+      </aside>
+      
+      <!-- Main Content -->
+      <main class="bg-white shadow-md rounded-lg p-6 flex-1 overflow-y-auto">
+        
+        <!-- Navabr -->
+        <nav class="bg-blue-500 text-white p-4 rounded mb-6 sticky top-0 z-50">
+          <ul class="flex justify-center space-x-6">
+            <li><a href="#about" class="hover:font-bold">About Me</a></li>
+            <li><a href="#services" class="hover:font-bold">Services</a></li>
+            <li><a href="#skills" class="hover:font-bold">Skills</a></li>
+            <li><a href="#contact" class="hover:font-bold">Contact</a></li>
+          </ul>
+        </nav>
+        
+        
+        <!-- About Section -->
+        <section id="about" class="mb-6">
+          <h2 class="text-xl font-bold mb-2">About Me</h2>
+          <p>
+            Hi, I’m a passionate and results-driven Data Analyst with a deep enthusiasm for turning raw data into meaningful insights. With a strong foundation in data analysis tools and techniques, I specialize in uncovering trends, solving complex problems, and providing actionable recommendations to empower businesses to make informed decisions.          </p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="mb-6">
+          <h2 class="text-xl font-bold mb-4">Services</h2>
+          <div class="grid gap-4 md:grid-cols-3">
+            <div class="bg-gray-100 shadow p-4 rounded text-center">
+              <h3 class="font-bold text-blue-500">Data Cleaning</h3>
+              <p class="text-sm">Prepare accurate and organized datasets by fixing errors, handling missing values, and ensuring consistency.</p>
+            </div>
+            <div class="bg-gray-100 shadow p-4 rounded text-center">
+              <h3 class="font-bold text-blue-500">Data Analysis</h3>
+              <p class="text-sm">Discover trends and actionable insights to support informed decision-making.</p>
+            </div>
+            <div class="bg-gray-100 shadow p-4 rounded text-center">
+              <h3 class="font-bold text-blue-500">Data Visualization</h3>
+              <p class="text-sm">Create interactive dashboards using Power BI, Tableau, or Excel to present data effectively.</p>
+            </div>
+            <div class="bg-gray-100 shadow p-4 rounded text-center">
+              <h3 class="font-bold text-blue-500">Business Intelligence</h3>
+              <p class="text-sm">Design automated reports to track performance and support strategic planning.</p>
+            </div>
+            <div class="bg-gray-100 shadow p-4 rounded text-center">
+              <h3 class="font-bold text-blue-500"> Market and Sales Analysis</h3>
+              <p class="text-sm">Analyze customer behavior and sales data to boost ROI and optimize strategies.</p>
+            </div>
+            <div class="bg-gray-100 shadow p-4 rounded text-center">
+              <h3 class="font-bold text-blue-500">Predictive Analysis</h3>
+              <p class="text-sm">Forecast trends and outcomes to mitigate risks and improve planning.</p>
+            </div>
+            <div class="bg-gray-100 shadow p-4 rounded text-center">
+              <h3 class="font-bold text-blue-500">Custom Solutions</h3>
+              <p class="text-sm">Tailored data services for your unique business needs.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-6">
+          <h2 class="text-xl font-bold mb-4">Skills</h2>
+          <div class="space-y-4">
+            <!-- Data Cleaning and Preparation -->
+            <div class="relative pt-1">
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-semibold">Data Cleaning and Preparation</span>
+                <span class="text-sm font-semibold">100%</span>
+              </div>
+              <div class="overflow-hidden h-2 text-xs flex rounded bg-gray-200">
+                <div class="bg-blue-500 w-full"></div>
+              </div>
+            </div>
+
+            <!-- Statistical Analysis -->
+            <div class="relative pt-1">
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-semibold">Statistical Analysis</span>
+                <span class="text-sm font-semibold">90%</span>
+              </div>
+              <div class="overflow-hidden h-2 text-xs flex rounded bg-gray-200">
+                <div class="bg-blue-500 w-[90%]"></div>
+              </div>
+            </div>
+
+            <!-- Data Visualization -->
+            <div class="relative pt-1">
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-semibold">Data Visualization</span>
+                <span class="text-sm font-semibold">80%</span>
+              </div>
+              <div class="overflow-hidden h-2 text-xs flex rounded bg-gray-200">
+                <div class="bg-blue-500 w-[80%]"></div>
+              </div>
+            </div>
+
+            <!-- SQL -->
+            <div class="relative pt-1">
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-semibold">SQL</span>
+                <span class="text-sm font-semibold">85%</span>
+              </div>
+              <div class="overflow-hidden h-2 text-xs flex rounded bg-gray-200">
+                <div class="bg-blue-500 w-[85%]"></div>
+              </div>
+            </div>
+
+            <!-- Programming Languages -->
+            <div class="relative pt-1">
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-semibold">Programming Languages</span>
+                <span class="text-sm font-semibold">80%</span>
+              </div>
+              <div class="overflow-hidden h-2 text-xs flex rounded bg-gray-200">
+                <div class="bg-blue-500 w-[80%]"></div>
+              </div>
+            </div>
+               <!-- Critical Thinking -->
+               <div class="relative pt-1">
+                <div class="flex items-center justify-between">
+                  <span class="text-sm font-semibold">Critical Thinking</span>
+                  <span class="text-sm font-semibold">85%</span>
+                </div>
+                <div class="overflow-hidden h-2 text-xs flex rounded bg-gray-200">
+                  <div class="bg-blue-500 w-[85%]"></div>
+                </div>
+              </div>
+              <!-- Business Acumen -->
+              <div class="relative pt-1">
+                <div class="flex items-center justify-between">
+                  <span class="text-sm font-semibold">Business Acumen</span>
+                  <span class="text-sm font-semibold">90%</span>
+                </div>
+                <div class="overflow-hidden h-2 text-xs flex rounded bg-gray-200">
+                  <div class="bg-blue-500 w-[90%]"></div>
+                </div>
+              </div>
+
+              <!-- Excel Mastery -->
+              <div class="relative pt-1">
+                <div class="flex items-center justify-between">
+                  <span class="text-sm font-semibold">Excel Mastery</span>
+                  <span class="text-sm font-semibold">90%</span>
+                </div>
+                <div class="overflow-hidden h-2 text-xs flex rounded bg-gray-200">
+                  <div class="bg-blue-500 w-[90%]"></div>
+                </div>
+              </div>
+                <!-- Communication Skills -->
+                <div class="relative pt-1">
+                  <div class="flex items-center justify-between">
+                    <span class="text-sm font-semibold">Communication Skills</span>
+                    <span class="text-sm font-semibold">80%</span>
+                  </div>
+                  <div class="overflow-hidden h-2 text-xs flex rounded bg-gray-200">
+                    <div class="bg-blue-500 w-[80%]"></div>
+                  </div>
+                </div>
+
+                 <!-- Problem-Solving -->
+                 <div class="relative pt-1">
+                  <div class="flex items-center justify-between">
+                    <span class="text-sm font-semibold">Problem-Solving</span>
+                    <span class="text-sm font-semibold">90%</span>
+                  </div>
+                  <div class="overflow-hidden h-2 text-xs flex rounded bg-gray-200">
+                    <div class="bg-blue-500 w-[90%]"></div>
+                  </div>
+                </div>
+          
+          
+          
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mb-6">
+          <h2 class="text-xl font-bold mb-4">Contact Me</h2>
+          <form class="space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-gray-600 mb-2">Your Name</label>
+                <input type="text" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+              </div>
+              <div>
+                <label class="block text-gray-600 mb-2">Your Email</label>
+                <input type="email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-gray-600 mb-2">Subject</label>
+              <input type="text" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+            </div>
+
+            <div>
+              <label class="block text-gray-600 mb-2">Message</label>
+              <textarea rows="6" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"></textarea>
+            </div>
+
+            <button type="submit" class="bg-blue-500 text-white py-2 px-6 rounded-md hover:bg-blue-600 transition duration-300">
+              Send Message
+            </button>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-6 text-center text-sm text-gray-500">
+      &copy; 2024 Tasmim Islam Tonni | All Rights Reserved
+    </footer>
+  </div>
+ <!-- Link to script.js -->
+  <script src="script.js"></script>
+</body>
+</html>
